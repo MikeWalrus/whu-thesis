@@ -967,7 +967,7 @@
     \skip_zero:N \bibsep % 参考文献间距设为 0
     \tl_if_eq:NnT \g__whu_style_bib_style_tl { numerical }
       {
-        \bibliographystyle { data / gbt7714-2005-numerical }
+        \bibliographystyle { gbt7714-2005-numerical }
         % \bibliographystyle { data / gbt7714-2005-whu-numerical }
 
         \NAT@numberstrue
@@ -986,7 +986,7 @@
     \clist_if_in:nVT { author-year , author-year-numbered }
       \g__whu_style_bib_style_tl
       {
-        \bibliographystyle { data / gbt7714-2005-author-year }
+        \bibliographystyle { gbt7714-2005-author-year }
         \tl_if_eq:NnF \g__whu_style_cite_style_tl { author-year }
           { \__whu_invalid_cite_style: }
       }
